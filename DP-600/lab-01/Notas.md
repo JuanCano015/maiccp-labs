@@ -25,3 +25,7 @@ SELECT Items, SUM(quantity * UnitPrice) as Revenue
 FROM sales
 GROUP BY Item
 ORDER BY Revenue DESC;
+
+## Conexão com o que eu já sabia
+O conceito do "_delta_log" é parecido com auditoria de dados que eu já havia implementado manualmente em SQL a ideia é a mesma: registrar cada operação feita nos dados para permitir rastreabilidade.
+A diferença é que o Delta Lake faz isso nativamente na camada de armazenamento, sem precisar de nenhuma lógica adicional.
